@@ -59,8 +59,12 @@ fun main() {
  * Пользователь задает время в часах, минутах и секундах, например, 8:20:35.
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
-fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
-
+fun seconds(hours: Int, minutes: Int, seconds: Int): Int {
+    val hours = hours * 3600
+    val minutes = minutes * 60
+    val seconds = seconds
+    return(hours + minutes + seconds)
+}
 /**
  * Тривиальная
  *
@@ -68,7 +72,12 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
  * Определить длину того же отрезка в метрах (в данном случае 18.98).
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
-fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
+fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double {
+    val sagenes = sagenes * 48
+    val arshins = arshins * 16
+    val vershoks = vershoks
+    return (sagenes + arshins + vershoks) * 4.445 / 100.0
+}
 
 /**
  * Тривиальная
@@ -76,8 +85,12 @@ fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
  * Пользователь задает угол в градусах, минутах и секундах (например, 36 градусов 14 минут 35 секунд).
  * Вывести значение того же угла в радианах (например, 0.63256).
  */
-fun angleInRadian(deg: Int, min: Int, sec: Int): Double = TODO()
-
+fun angleInRadian(deg: Int, min: Int, sec: Int): Double {
+    val deg = deg
+    val min = min / 60.0
+    val sec = sec / 3600.0
+    return (deg + min + sec) * PI / 180.00
+}
 /**
  * Тривиальная
  *
@@ -101,8 +114,12 @@ fun thirdDigit(number: Int): Int = TODO()
  * прибыл на станцию назначения в h2 часов m2 минут того же дня (например в 13:01).
  * Определите время поезда в пути в минутах (в данном случае 216).
  */
-fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int = TODO()
-
+fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int {
+    val hoursDepart = hoursDepart
+    val minutesDepart = minutesDepart
+    val hoursArrive = hoursArrive
+    val minutesArrive = minutesArrive
+}
 /**
  * Простая
  *
